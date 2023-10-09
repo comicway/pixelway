@@ -1,4 +1,40 @@
+body {
+    background-color: #1f252c
+}
 .fondo-header {
     color: #EFEFEF;
     background-color: #2E3742;
+}
+.color-btn-way {
+    background-color: #D3D329;
+    color: black;
+}
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.container-flex-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 1px #1f252c solid;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.item-grow-1 {
+    flex-grow: 1;
+}
+.item-grow-2 {
+    flex-grow: 2;
+}
+.item-grow-10 {
+    flex-grow: 10;
+}
+.item-grow-11 {
+    flex-grow: 11;
+    padding-left: 10px;
+}
+.span-donacion {
+    float: right;
 }
