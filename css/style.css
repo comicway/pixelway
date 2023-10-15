@@ -37,4 +37,31 @@ body {
 }
 .span-donacion {
     float: right;
+    font-weight: bold;
+    color: #D3D329;
+}
+.card-color {
+    background-color: #2E3742;
+}
+.card-color h5, .card-color p {
+    color: white;
+}
+.progress {
+    margin-bottom: 17px;
+}
+.color-bar-progress {
+   background:  linear-gradient(to right, #2E3742, #D3D329);
+}
+.container-card {
+    margin-top: 35px;
+}
+.h2pixel {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+.card-category {
+    text-align: right;
+    color: #81D80F !important;
+    font-size: 10px;
 }
