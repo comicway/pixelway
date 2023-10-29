@@ -68,3 +68,7 @@ body {
 .margin-formu {
     margin: 15px 0px;
 }
+.bordemensaje {
+    border: 1px white solid;
+    padding: 35px;
+}
