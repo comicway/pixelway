@@ -1,4 +1,3 @@
-
 const formu = document.querySelector ("#formRegistro");
 const espacioForum = document.querySelector ("#espacioForm");
 
