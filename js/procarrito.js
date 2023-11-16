@@ -1,10 +1,13 @@
 const carritoExpres = document.querySelector("#recompensas");
 const btnApoyar = document.querySelector("#btnQuieroApoyar");
 
+
 carritoExpres.remove();
 
 function recompensaActiva() {
     const aquiRecompensas = document.querySelector("#recompensasAgregado");
+    
+    
     aquiRecompensas.appendChild(carritoExpres);
     btnApoyar.remove();
     
@@ -13,57 +16,99 @@ function recompensaActiva() {
     const checkboxMaterial = document.querySelector("#material");
     const checkboxEspecial = document.querySelector("#especial");
     const checkboxFigura = document.querySelector("#figura");
-
-    function calcularResultado() {
-        
+    
+    function checkMaterial() {
         const valorMaterial = checkboxMaterial.checked;
-        const valorEspecial = checkboxEspecial.checked;
-        const valorFigura = checkboxFigura.checked;
-
         const carrito = document.querySelector("#carrito");
+        const elementoLi = document.querySelector(".recompensa-material");
 
-        let total = 0;
+        let precioMaterial = 30;
         
-        function agregarRecompensa(nombre, precio) {
+        function agregarRecompensa(nombre, precioMaterial) {
             const li = document.createElement('li');
-            li.className = 'list-group-item';
-            li.innerHTML = `${nombre} <span>${precio}$USD</span>`;
+            li.className = 'list-group-item recompensa-material';
+            li.innerHTML = `${nombre} <span>${precioMaterial}$USD</span>`;
             carrito.appendChild(li);
-            total += precio;
-
         };
-        
+
+        const eliminarLista = () => elementoLi && elementoLi.remove();
+
         if (valorMaterial) {
-            agregarRecompensa('Juego + Materiales POP', 30);
+            agregarRecompensa('Juego + Materiales POP', precioMaterial);
         } else {
-            carrito.removeChild(li);
-        };
-        
-        if (valorEspecial) {
-            agregarRecompensa('Juego edición especial', 40);
-        } else {
-            carrito.removeChild(li); 
-        };
-        
-        if (valorFigura) {
-            agregarRecompensa('Juego + Figura de acción', 60);
-        } else {
-            carrito.removeChild(li);            
+            eliminarLista(); 
         };
 
-        return total;
+        return precioMaterial;
     };
 
-    checkboxMaterial.addEventListener("change", calcularResultado);
-    checkboxEspecial.addEventListener("change", calcularResultado);
-    checkboxFigura.addEventListener("change", calcularResultado);
+    function checkEspecial() {
+        const valorEspecial = checkboxEspecial.checked;
+        const carrito = document.querySelector("#carrito");
+        const elementoLi = document.querySelector(".recompensa-especial");
+
+        let precioEspecial = 40;
+        
+        function agregarRecompensa(nombre, precioEspecial) {
+            const li = document.createElement('li');
+            li.className = 'list-group-item recompensa-especial';
+            li.innerHTML = `${nombre} <span>${precioEspecial}$USD</span>`;
+            carrito.appendChild(li);
+        };
+
+        const eliminarLista = () => elementoLi && elementoLi.remove();
+
+        if (valorEspecial) {
+            agregarRecompensa('Juego edición especial', precioEspecial);
+        } else {
+            eliminarLista();  
+        };
+
+        return precioEspecial;
+    };
+
+    function checkFigura() {
+        const valorFigura = checkboxFigura.checked;
+        const carrito = document.querySelector("#carrito");
+        const elementoLi = document.querySelector(".recompensa-figura");
+
+        let precioFigura = 60;
+        
+        function agregarRecompensa(nombre, precioFigura) {
+            const li = document.createElement('li');
+            li.className = 'list-group-item recompensa-figura';
+            li.innerHTML = `${nombre} <span>${precioFigura}$USD</span>`;
+            carrito.appendChild(li);
+        };
+
+        const eliminarLista = () => elementoLi && elementoLi.remove();
+
+        if (valorFigura) {
+            agregarRecompensa('Juego + Figura de acción', precioFigura);
+        } else {
+            //precioFigura = 0;
+            eliminarLista();
+        };
+
+        return precioFigura;
+    };
+
+    checkboxMaterial.addEventListener("change", checkMaterial);
+    checkboxEspecial.addEventListener("change", checkEspecial);
+    checkboxFigura.addEventListener("change", checkFigura);
+
+    function calcularResultado() {
+
+        let resultado = checkFigura() + checkEspecial() + checkMaterial();
+
+        return resultado;
+        
+    };
 
     const totalRecompensa = document.querySelector("#totalReco");
 
     totalRecompensa.innerHTML = `Total: <span>${calcularResultado()}$USD</span>`;
 
-    // console.log(calcularResultado());
 };
 
 btnApoyar.addEventListener("click", recompensaActiva);
-
