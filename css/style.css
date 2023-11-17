@@ -132,3 +132,15 @@ body {
     color: #D3D329;
     font-weight: bold;
 }
+.finalizarcompra h4, .finalizarcompra label {
+    color: white;
+}
+.g-5 {
+    margin-top: 20px;
+}
+.buttonfinal {
+    margin-top: 20px;
+}
+.text-body-secondary, .invalid-feedback {
+    color: coral !important;
+}
