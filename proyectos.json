@@ -1,35 +1,34 @@
 [
-    {
-      "id": 1,
-      "titulo": "Gris",
-      "descripcion": "Gris es una muchacha llena de esperanzas y perdida en su propio mundo, enfrentada a una experiencia dolorosa de su vida.",
-      "tipo": "Plataforma",
-      "meta": 1000,
-      "img": "./img/gris-videojuego-card-002.jpg"
-    },
-    {
-      "id": 2,
-      "titulo": "Katana Zero",
-      "descripcion": "Los jugadores asumen el papel de un asesino samurái con habilidades especiales que busca completar misiones mortales",
-      "tipo": "Acción",
-      "meta": 2000,
-      "img": "gris-videojuego-slider.jpg"
-    },
-    {
-      "id": 3,
-      "titulo": "No Man's Sky",
-      "descripcion": "Es un juego de exploración espacial que ofrece a los jugadores un vasto universo generado proceduralmente para descubrir.",
-      "tipo": "Exploración",
-      "meta": 3000,
-      "img": "katana-zero-slider.jpg"
-    },
-    {
-        "id": 4,
-        "titulo": "Producto 4",
-        "descripcion": "Descripcion 4",
-        "tipo": "Tipo 4",
-        "meta": 4000,
-        "img": "no-man-sky-001.jpg"
-      }
-  ]
-  
+  {
+    "id": 1,
+    "titulo": "Gris",
+    "descripcion": "Gris es una muchacha llena de esperanzas y perdida en su propio mundo, enfrentada a una experiencia dolorosa de su vida.",
+    "tipo": "Plataforma",
+    "meta": 1000,
+    "img": "./img/gris-videojuego-card.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Katana Zero",
+    "descripcion": "Los jugadores asumen el papel de un asesino samurái con habilidades especiales que busca completar misiones mortales",
+    "tipo": "Acción",
+    "meta": 2000,
+    "img": "./img/gris-videojuego-slider.jpg"
+  },
+  {
+    "id": 3,
+    "titulo": "No Man's Sky",
+    "descripcion": "Es un juego de exploración espacial que ofrece a los jugadores un vasto universo generado proceduralmente para descubrir.",
+    "tipo": "Exploración",
+    "meta": 3000,
+    "img": "./img/katana-zero-slider.jpg"
+  },
+  {
+      "id": 4,
+      "titulo": "Producto 4",
+      "descripcion": "Descripcion 4",
+      "tipo": "Tipo 4",
+      "meta": 4000,
+      "img": "./img/no-man-sky-001.jpg"
+    }
+]
