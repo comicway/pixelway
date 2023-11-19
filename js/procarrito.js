@@ -35,8 +35,15 @@ function recompensaActiva() {
 
         if (valorMaterial) {
             agregarRecompensa('Juego + Materiales POP', precioMaterial);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Sigue agregano items XD",
+                showConfirmButton: false,
+                timer: 1500
+              });
         } else {
-            eliminarLista(); 
+            eliminarLista();
         };
 
         return precioMaterial;
@@ -60,6 +67,13 @@ function recompensaActiva() {
 
         if (valorEspecial) {
             agregarRecompensa('Juego edición especial', precioEspecial);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Sigue agregano items XD",
+                showConfirmButton: false,
+                timer: 1500
+              });
         } else {
             eliminarLista();  
         };
@@ -85,6 +99,13 @@ function recompensaActiva() {
 
         if (valorFigura) {
             agregarRecompensa('Juego + Figura de acción', precioFigura);
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Sigue agregano items XD",
+                showConfirmButton: false,
+                timer: 1500
+              });
         } else {
             //precioFigura = 0;
             eliminarLista();
