@@ -49,8 +49,6 @@ function mostrarProyectos(proyectos) {
     contenedorProyectos.appendChild(tarjetaProyecto);
 
   });
-
-  console.log('Proyectos cargados:', proyectos);
-}
+};
 
 document.addEventListener('DOMContentLoaded', cargarProyectos);
