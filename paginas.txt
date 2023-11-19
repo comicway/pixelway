@@ -3,6 +3,5 @@ paginas
 1 home
 2 inicio sesion
 3 grilla todos los proyectos con filtro
-4 vista interna del proyecto
-5 carrito
-6 finalizar donacion
+4 vista interna del proyecto y carrito
+5 finalizar donacion
