@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "titulo": "Producto 1",
+      "descripcion": "Descripcion 1",
+      "tipo": "Tipo 1",
+      "meta": 1000
+    },
+    {
+      "id": 2,
+      "titulo": "Producto 2",
+      "descripcion": "Descripcion 2",
+      "tipo": "Tipo 2",
+      "meta": 2000
+    },
+    {
+      "id": 3,
+      "titulo": "Producto 3",
+      "descripcion": "Descripcion 3",
+      "tipo": "Tipo 3",
+      "meta": 3000
+    },
+    {
+        "id": 4,
+        "titulo": "Producto 4",
+        "descripcion": "Descripcion 4",
+        "tipo": "Tipo 4",
+        "meta": 4000
+      }
+  ]
+  

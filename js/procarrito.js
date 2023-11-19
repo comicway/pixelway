@@ -112,3 +112,17 @@ function recompensaActiva() {
 };
 
 btnApoyar.addEventListener("click", recompensaActiva);
+
+// Uso de temporizadores y asincronia
+
+const numPatrocinadores = document.querySelector("#nPatro");
+const faltan = document.querySelector(".span-donacion");
+
+let patro = 16;
+let faltaCantidad = 5000;
+
+setInterval(() => {
+    numPatrocinadores.innerHTML = ++patro;
+    faltan.innerHTML = `Faltan: ${--faltaCantidad}`;
+}, 3000);
+
